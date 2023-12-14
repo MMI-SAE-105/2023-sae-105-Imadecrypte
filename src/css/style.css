@@ -1,0 +1,29 @@
+
+/*Le fichier style.css aggrège l'ensemble du code css, 
+découpé en différents fichiers correspondant à aux composants de l'interface*/
+
+/* Polices de caractère */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap");
+
+/* Librairies */
+@import "/src/css/vendors/normalize.css";
+
+/* Variables */
+@import "/src/css/utils/variable.css";
+
+/* Règles générales */
+@import "/src/css/base/main.css";
+@import "/src/css/base/media.css";
+
+/* Règles layout */
+@import "/src/css/layout/section.css";
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/footer.css";
+
+/* Règles composants */
+@import "/src/css/component/btn.css";
+@import "/src/css/component/intro.css";
+@import "/src/css/component/menu.css";
+@import "/src/css/component/stats.css";
+@import "/src/css/component/team.css";
+@import "/src/css/component/work.css";
