@@ -25,6 +25,5 @@ découpé en différents fichiers correspondant à aux composants de l'interface
 @import "/src/css/component/intro.css";
 @import "/src/css/component/menu.css";
 @import "/src/css/component/stats.css";
-@import "/src/css/component/team.css";
-@import "/src/css/component/work.css";
+@import "/src/css/component/icon.css";
 @import "/src/css/component/carrousel.css";

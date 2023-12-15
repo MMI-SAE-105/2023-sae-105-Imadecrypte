@@ -1,0 +1,10 @@
+.container {
+    position: relative;
+}
+
+.bracket {
+    position: absolute;
+    height: 300px;
+    top: 140px; /* Ajustez la valeur selon vos besoins pour l'axe y */
+    left: 240px; /* Ajustez la valeur selon vos besoins pour l'axe x */
+}

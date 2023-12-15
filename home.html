@@ -61,6 +61,13 @@
             </div>
             <div class="main__tarifs">
                 <h2>Tarifs</h2>
+                <div class="container">
+                <img
+                    class="bracket"
+                    src="/public/icons/close-bracket_5111519 1.svg"
+                    alt="closed_bracket"
+                />
+                </div>
                 <ul>
                     <li>
                         <p>Plein tarif <span class="main__tarifs__prix1">11€</span></p>
@@ -88,8 +95,7 @@
             </div>
             <button class="main__button">Billeterie</button>
 
-            <h2>Galerie des oeuvres</h2>
-            <!-- Faire le carrousel ici -->
+            <h2 class="main__texte">Galerie des oeuvres</h2>
                 <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
                     <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précédent" @click="parent = $x0.$refs.parent, parent.scrollLeft -= parent.clientWidth"><</button>
                     <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="parent = $x0.$refs.parent, parent.scrollLeft += parent.clientWidth">></button>        
