@@ -1,6 +1,12 @@
 .footer{
-    background-color: #A84C3B;
+    background-color: #9B715D;
     align-items: center;
     text-align: center;
     justify-content: space-between;
+}
+
+.footer_button{
+    background-color: #A84C3B;
+    margin-top: 20px;
+    border-radius: 8px;
 }

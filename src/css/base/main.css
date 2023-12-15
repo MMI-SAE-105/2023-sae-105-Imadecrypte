@@ -1,0 +1,17 @@
+.main{
+    background-color: #F4EFE3;
+}
+
+.main__calendrier{
+    margin: 10px 0; 
+    text-indent: 30px; 
+}
+
+.main__calendrier__texte{
+    margin: 10px 0; 
+    text-indent: 30px; 
+}
+
+.main__tarifs{
+    text-indent: 30px; 
+}
