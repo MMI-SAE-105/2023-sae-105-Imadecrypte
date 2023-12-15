@@ -97,3 +97,25 @@
     display: block;
     margin: auto;
 }
+
+.bio {
+    max-width: 600px; /* Ajustez la largeur maximale selon vos préférences */
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour mettre en évidence la section bio */
+}
+
+.bio h2 {
+    text-align: center;
+    background-color: #7F9366; /* Couleur de fond verte */
+    color: black; /* Couleur du texte blanc */
+    padding: 10px; /* Espace intérieur autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.bio img {
+    display: block;
+    margin: auto; /* Centrer l'image horizontalement */
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Garantir une hauteur proportionnelle lors du redimensionnement */
+}
