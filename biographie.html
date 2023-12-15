@@ -5,23 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biographie</title>
     <link href="src/css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body>
-    <header class="header">
-        <a>
-            <img
-                src="/public/icons/leaves_1490749 1.svg"
-                alt="Logo Wright"
-            />
-        </a>
-        <h1>Wright</h1>
-        <a>
-            <img
-                src="/public/icons/filter_4949054 1.svg"
-                alt="Logo Menu"
-            />
-        </a>
-    </header>
+<body x-data="{ menuOpen: false }">
+        <header class="header">
+            <a href="/index.html">
+                <img
+                    class="header__icon"
+                    src="/public/icons/leaves_1490749 1.svg"
+                    alt="Logo Wright"
+                />
+            </a>
+            <h1 class="header__title">Wright</h1>
+            <a @click="menuOpen = !menuOpen">
+                <img
+                    class="header__menu"
+                    src="/public/icons/filter_4949054 1.svg"
+                    alt="Logo Menu"
+                />
+            </a>
+        </header>
+        <div x-show="menuOpen" class="menu-page">
+            <button @click="menuOpen = false">
+                <img class="menu-page__img" src="/public/icons/cross.png" alt="Image Croix">
+            </button>
+            <ul class="menu-page__text">
+                <li><a href="/biographie.html">Biographie</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/frise.html">Frise</a></li>
+                <li><a href="/home.html">Accueil-2</a></li>
+                <li><a href="/index.html">Accueil-1</a></li>
+                <li><a href="/robie_house.html">Robie House</a></li>
+            </ul>
+        </div>
     <main class="bio">
         <h2>Frank Lloyd Wright</h2>
         <img
