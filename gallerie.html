@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gallerie des oeuvres</title>
+        <link href="src/css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="header">
             <a>
                 <img
                     src="/public/icons/leaves_1490749 1.svg"
@@ -21,32 +22,21 @@
                 />
             </a>
         </header>
-        <main>
+        <main class="gallerie">
             <h2>Gallerie des oeuvres</h2>
-            <img
-                src="/public/img/fallingwater.webp"
-                alt="Image Fallingwater"
-            />
-            <p>        Fallingwater (1935)
-
-                Située à Mill Run, en P
-                ennsylvanie, Fallingwater est 
-                l'une des œuvres les plus 
-                célèbres de Wright. La 
-                maison est construite 
-                au-dessus d'une cascade, 
-                intégrant harmonieusement 
-                la nature dans son design. 
-                Les larges balcons en 
-                porte-à-faux donnent 
-                l'impression que la maison 
-                flotte au-dessus de l'eau.</p>
+            <div class="gallerie-item">
+                <img
+                    src="/public/img/fallingwater.webp"
+                    alt="Image Fallingwater"
+                />
+                <p>Fallingwater (1935) Située à Mill Run, en Pennsylvanie, Fallingwater est l'une des œuvres les plus célèbres de Wright. La maison est construite au-dessus d'une cascade, intégrant harmonieusement la nature dans son design. Les larges balcons en porte-à-faux donnent l'impression que la maison flotte au-dessus de l'eau.</p>
+            </div>
+            <div class="gallerie-item">
             <img
                 src="/public/img/maison_cascade.webp"
                 alt="Image La Maison sur la Cascade"
             />
             <p>La Maison sur la Cascade (1937)
-
                 La Maison sur la Cascade, également connue sous le nom de Kaufmann Residence, est un exemple emblématique du style organique de Wright. Il a conçu la maison pour s'intégrer naturellement dans son environnement, en utilisant des plateformes en cascade et des terrasses qui suivent la topographie du site.</p>
             <img
                 src="/public/img/taliesin_west.webp"
@@ -90,36 +80,41 @@
             <p>        Wingspread (1938)
 
                 Wingspread, située à Racine, dans le Wisconsin, est la résidence de la famille Johnson. Cette maison expansive présente un plan en étoile, créant une harmonie entre les espaces intérieurs et extérieurs. Les fenêtres panoramiques offrent une vue sur les vastes jardins environnants.</p>
+            </div>
         </main>
-        <footer>
-            <button>Contactez-nous !</button>
-            <p>Billeterie</p>
-            <p>Mentions légales</p>
-            <p>Pour nous suivre :</p>
-            <a>
-                <img 
-                    src="/public/icons/instagram_717392 1.svg" 
-                    alt="Logo Instagram"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/x-social-media-black-icon 1.svg"
-                    alt="Logo X"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/facebook.svg"
-                    alt="Logo Facebook"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/tiktok.svg"
-                    alt="Logo TikTok"
-                />
-            </a>
+        <footer class="footer">
+            <button class="footer_button">Contactez-nous !</button>
+                <p>Billeterie</p>
+                <p>Mentions légales</p>
+                <p>Pour nous suivre :</p>
+                <a>
+                    <img
+                        class="footer__logo1"
+                        src="/public/icons/instagram_717392 1.svg" 
+                        alt="Logo Instagram"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo2"
+                        src="/public/icons/x-social-media-black-icon 1.svg"
+                        alt="Logo X"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo3"
+                        src="/public/icons/facebook.svg"
+                        alt="Logo Facebook"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo4"
+                        src="/public/icons/tiktok.svg"
+                        alt="Logo TikTok"
+                    />
+                </a>
         </footer>
     </body>
 </html>

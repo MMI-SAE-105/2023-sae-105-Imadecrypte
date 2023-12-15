@@ -119,3 +119,36 @@
     max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Garantir une hauteur proportionnelle lors du redimensionnement */
 }
+
+/* Ajoutez ce code à votre fichier CSS */
+
+.gallerie {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Style pour chaque paire d'image et de texte */
+.gallerie-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Une colonne pour l'image et deux colonnes pour le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    margin-bottom: 30px; /* Espace entre chaque paire d'image et de texte */
+}
+
+/* Style pour chaque image */
+.gallerie-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le texte à droite de l'image */
+.gallerie-item p {
+    text-align: justify; /* Justification du texte */
+}
+
+/* Style pour le titre (situé au-dessus du texte) */
+.gallerie-item h2 {
+    margin-bottom: 10px; /* Espace entre le titre et le texte */
+}
