@@ -1,0 +1,21 @@
+.main_frise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#F4EFE3;
+}
+
+.content-container_frise {
+    text-align: center;
+    margin-bottom: 20px; /* Ajoute un espace entre chaque paire d'image et de texte */
+}
+
+.img_frise {
+    max-width: 200px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.p_frise {
+    margin-top: 10px; /* Ajoute un espacement entre l'image et le paragraphe */
+}
