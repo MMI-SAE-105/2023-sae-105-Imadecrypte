@@ -4,9 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Robie House</title>
+        <link href="src/css/style.css" rel="stylesheet">
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color:#F4EFE3;
+            }
+
+            .content-container {
+                text-align: center;
+                margin-bottom: 20px; /* Ajoute un espace entre chaque paire d'image et de texte */
+            }
+
+            img {
+                max-width: 200px;
+                height: auto;
+                border-radius: 30px;
+            }
+
+            p {
+                margin-top: 10px; /* Ajoute un espacement entre l'image et le paragraphe */
+            }
+        </style>
     </head>
     <body>
-        <header>
+        <header class="header">
             <a>
                 <img
                     src="/public/icons/leaves_1490749 1.svg"
@@ -22,57 +46,67 @@
             </a>
         </header>
         <main>
+        <div class="content-container">
             <h2>Robie House</h2>
             <h3>Partie 1 : Les Origines</h3>
             <img
-                src="/public/img/robie_house.webp"
+                src="/public/img/robie_house2.webp"
                 alt="Image Robie House"
             />
             <p>La Robie House, également connue sous le nom de Frederick C. Robie House, est une œuvre architecturale emblématique conçue par l'architecte américain Frank Lloyd Wright. Sa conception a débuté en 1908 et la construction a été achevée en 1910. La maison est située dans le quartier historique de Hyde Park à Chicago, Illinois, et elle est considérée comme l'un des chefs-d'œuvre de la carrière de Wright.</p>
+        </div>
 
+        <div class="content-container">
             <h3>Partie 2 : L'architecte Visionnaire</h3>
             <img
                 src="/public/img/robie_house0.webp"
                 alt="Image Robie House"
             />
             <p>Frank Lloyd Wright, né en 1867, était un architecte visionnaire qui a profondément influencé l'architecture américaine au XXe siècle. Il est célèbre pour son approche organique et sa volonté de fusionner l'architecture avec la nature. La Robie House incarne parfaitement ses idéaux de l'architecture prairie, un style caractérisé par des lignes horizontales, de larges surplombs, et une intégration harmonieuse avec l'environnement.</p>
+        </div>
 
+        <div class="content-container">
             <h3>Partie 3 : Les Caractéristiques Architecturales</h3>
             <img
                 src="/public/img/robie_house1.webp"
                 alt="Image Robie House"
             />
             <p>La Robie House se distingue par ses lignes épurées, son toit en porte-à-faux, ses vastes espaces intérieurs ouverts, et son utilisation novatrice de l'espace. Les grandes fenêtres horizontales permettent une abondance de lumière naturelle, tandis que les matériaux, tels que le béton et la brique, sont utilisés de manière expressive. L'intérieur reflète également la philosophie de Wright, avec des espaces fluides et une intégration continue du design.</p>
-        </main>
-        <footer>
-            <button>Contactez-nous !</button>
-            <p>Billeterie</p>
-            <p>Mentions légales</p>
-            <p>Pour nous suivre :</p>
-            <a>
-                <img 
-                    src="/public/icons/instagram_717392 1.svg" 
-                    alt="Logo Instagram"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/x-social-media-black-icon 1.svg"
-                    alt="Logo X"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/facebook.svg"
-                    alt="Logo Facebook"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/tiktok.svg"
-                    alt="Logo TikTok"
-                />
-            </a>
+        </div>
+    </main>
+        <footer class="footer">
+            <button class="footer_button">Contactez-nous !</button>
+                <p>Billeterie</p>
+                <p>Mentions légales</p>
+                <p>Pour nous suivre :</p>
+                <a>
+                    <img
+                        class="footer__logo1"
+                        src="/public/icons/instagram_717392 1.svg" 
+                        alt="Logo Instagram"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo2"
+                        src="/public/icons/x-social-media-black-icon 1.svg"
+                        alt="Logo X"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo3"
+                        src="/public/icons/facebook.svg"
+                        alt="Logo Facebook"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo4"
+                        src="/public/icons/tiktok.svg"
+                        alt="Logo TikTok"
+                    />
+                </a>
         </footer>
     </body>
 </html>
