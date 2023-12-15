@@ -45,3 +45,57 @@
     margin-left: 150px;
     color:#7F9366;
 }
+
+.text_h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.main {
+    max-width: 600px; /* Ajustez la largeur maximale selon vos préférences */
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour mettre en évidence le formulaire */
+}
+
+.main h2 {
+    text-align: center;
+    color: #7F9366; /* Couleur du texte du titre */
+}
+
+.main div {
+    margin-bottom: 15px;
+}
+
+.main label {
+    display: block;
+    margin-bottom: 5px;
+    color: #7F9366; /* Couleur du texte des étiquettes */
+}
+
+.main input,
+
+.main textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #7F9366; /* Couleur de la bordure des champs de saisie */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.main button {
+    background-color: #7F9366; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+}
