@@ -4,111 +4,130 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Frise</title>
+        <link href="src/css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
     </head>
-    <body>
-        <header>
-            <a>
+    <body x-data="{ menuOpen: false }">
+        <header class="header">
+            <a href="/index.html">
                 <img
+                    class="header__icon"
                     src="/public/icons/leaves_1490749 1.svg"
                     alt="Logo Wright"
                 />
             </a>
-            <h1>Wright</h1>
-            <a>
+            <h1 class="header__title">Wright</h1>
+            <a @click="menuOpen = !menuOpen">
                 <img
+                    class="header__menu"
                     src="/public/icons/filter_4949054 1.svg"
                     alt="Logo Menu"
                 />
             </a>
         </header>
-        <main>
+        <div x-show="menuOpen" class="menu-page">
+            <button @click="menuOpen = false">
+                <img class="menu-page__img" src="/public/icons/cross.png" alt="Image Croix">
+            </button>
+            <ul class="menu-page__text">
+                <li><a href="/biographie.html">Biographie</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/frise.html">Frise</a></li>
+                <li><a href="/home.html">Accueil-2</a></li>
+                <li><a href="/index.html">Accueil-1</a></li>
+                <li><a href="/robie_house.html">Robie House</a></li>
+            </ul>
+        </div>
+
+        <main class="main_frise">
+
             <h2>Frise chronologique des oeuvres</h2>
-
-            <p>Robie House</p>
-            <p>1910</p>
-            <img
-                src="/public/img/robie_house2.webp"
-                alt="Image Robie House"
-            />
+            <div class="line">
+                <svg width="16" height="850" viewBox="0 0 16 997" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.31096 995.743C7.70148 996.134 8.33465 996.134 8.72517 995.743L15.0891 989.379C15.4797 988.989 15.4797 988.356 15.0891 987.965C14.6986 987.574 14.0654 987.574 13.6749 987.965L8.01807 993.622L2.36121 987.965C1.97069 987.574 1.33752 987.574 0.946999 987.965C0.556474 988.356 0.556474 988.989 0.946999 989.379L7.31096 995.743ZM7.01807 0.963623L7.01807 995.036H9.01807L9.01807 0.963623L7.01807 0.963623Z" fill="black"/>
+</svg>      </div>
+            <div class="timeline-item">
+                <p>Robie House</p>
+                <p>1910</p>
+                <img src="/public/img/robie_house2.webp" alt="Image Robie House" />
+            </div>
             
-            <p>Hollyhock house</p>
-            <p>1921</p>
-            <img
-                src="/public/img/hollyhock_house2.webp"
-                alt="Image Holyhock House"
-            />
+            <div class="timeline-item">
+                <p>Hollyhock House</p>
+                <p>1921</p>
+                <img src="/public/img/hollyhock_house2.webp" alt="Image Hollyhock House" />
+            </div>
 
-            <p>Fallingwater</p>
-            <p>1935</p>
-            <img
-                src="/public/img/falling_water2.webp"
-                alt="Image Fallingwater"
-            />
+            <div class="timeline-item">
+                <p>Fallingwater</p>
+                <p>1935</p>
+                <img src="/public/img/falling_water2.webp" alt="Image Fallingwater" />
+            </div>
 
-            <p>La Maison sur la Cascade</p>
-            <p>1937</p>
-            <img
-                src="/public/img/maison_cascade2.webp"
-                alt="Image La Maison sur la Cascade"
-            />
+            <div class="timeline-item">
+                <p>La Maison sur la Cascade</p>
+                <p>1937</p>
+                <img src="/public/img/maison_cascade2.webp" alt="Image La Maison sur la Cascade" />
+            </div>
 
-            <p>Taliesin West</p>
-            <p>1937</p>
-            <img
-                src="/public/img/taliesin_west2.webp"
-                alt="Image Taliesin West"
-            />
+            <div class="timeline-item">
+                <p>Taliesin West</p>
+                <p>1937</p>
+                <img src="/public/img/taliesin_west2.webp" alt="Image Taliesin West" />
+            </div>
 
-            <p>Wingspread</p>
-            <p>1938</p>
-            <img
-                src="/public/img/wingspread2.webp"
-                alt="Image Wingspread"
-            />
+            <div class="timeline-item">
+                <p>Wingspread</p>
+                <p>1938</p>
+                <img src="/public/img/wingspread2.webp" alt="Image Wingspread" />
+            </div>
 
-            <p>Johnson Wax Headquarters</p>
-            <p>1938</p>
-            <img
-                src="/public/img/johnson_wax_headquarters2.webp"
-                alt="Image Johnson Wax Headquarters"
-            />
+            <div class="timeline-item">
+                <p>Johnson Wax Headquarters</p>
+                <p>1938</p>
+                <img src="/public/img/johnson_wax_headquarters2.webp" alt="Image Johnson Wax Headquarters" />
+            </div>
 
-            <p>Guggenheim Museum</p>
-            <p>1959</p>
-            <img
-                src="/public/img/guggenheim_museum2.webp"
-                alt="Image Guggenheim Museum"
-            />
+            <div class="timeline-item">
+                <p>Guggenheim Museum</p>
+                <p>1959</p>
+                <img src="/public/img/guggenheim_museum2.webp" alt="Image Guggenheim Museum" />
+            </div>
         </main>
-        <footer>
-            <button>Contactez-nous !</button>
-            <p>Billeterie</p>
-            <p>Mentions légales</p>
-            <p>Pour nous suivre :</p>
-            <a>
-                <img 
-                    src="/public/icons/instagram_717392 1.svg" 
-                    alt="Logo Instagram"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/x-social-media-black-icon 1.svg"
-                    alt="Logo X"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/facebook.svg"
-                    alt="Logo Facebook"
-                />
-            </a>
-            <a>
-                <img
-                    src="/public/icons/tiktok.svg"
-                    alt="Logo TikTok"
-                />
-            </a>
+        <footer class="footer">
+                <button class="footer_button">Contactez-nous !</button>
+                <p>Billeterie</p>
+                <p>Mentions légales</p>
+                <p>Pour nous suivre :</p>
+                <a>
+                    <img
+                        class="footer__logo1"
+                        src="/public/icons/instagram_717392 1.svg" 
+                        alt="Logo Instagram"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo2"
+                        src="/public/icons/x-social-media-black-icon 1.svg"
+                        alt="Logo X"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo3"
+                        src="/public/icons/facebook.svg"
+                        alt="Logo Facebook"
+                    />
+                </a>
+                <a>
+                    <img
+                        class="footer__logo4"
+                        src="/public/icons/tiktok.svg"
+                        alt="Logo TikTok"
+                    />
+                </a>
         </footer>
     </body>
 </html>

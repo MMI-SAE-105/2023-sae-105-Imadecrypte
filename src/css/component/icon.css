@@ -8,3 +8,27 @@
     top: 140px; /* Ajustez la valeur selon vos besoins pour l'axe y */
     left: 240px; /* Ajustez la valeur selon vos besoins pour l'axe x */
 }
+
+.main_frise {
+    background-color: #F4EFE3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.timeline-item {
+    width: 48%; /* Ajustez la largeur selon vos besoins */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.line{
+    position: absolute;
+    top: 240px; /* Ajustez la valeur selon vos besoins pour l'axe y */
+    left: 350px; /* Ajustez la valeur selon vos besoins pour l'axe x */
+}
