@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Accueil</title>
         <link href="src/css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
         <script src="//unpkg.com/alpinejs" defer></script>
     </head>
-    <body>
+    <body x-data="{ menuOpen: false }">
         <header class="header">
-            <a>
+            <a href="/index.html">
                 <img
                     class="header__icon"
                     src="/public/icons/leaves_1490749 1.svg"
@@ -17,7 +18,7 @@
                 />
             </a>
             <h1 class="header__title">Wright</h1>
-            <a>
+            <a @click="menuOpen = !menuOpen">
                 <img
                     class="header__menu"
                     src="/public/icons/filter_4949054 1.svg"
@@ -25,6 +26,17 @@
                 />
             </a>
         </header>
+        <div x-show="menuOpen" class="menu-page">
+            <button @click="menuOpen = false">Fermer</button>
+            <h1>TEEEST</h1>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
         <main class="main">
             <div class="main__calendrier">
                 <h2>Calendrier d'exposition</h2>
