@@ -27,13 +27,16 @@
             </a>
         </header>
         <div x-show="menuOpen" class="menu-page">
-            <button @click="menuOpen = false">Fermer</button>
-            <h1>TEEEST</h1>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">Contact</a></li>
+            <button @click="menuOpen = false">
+                <img class="menu-page__img" src="/public/icons/cross.png" alt="Image Croix">
+            </button>
+            <ul class="menu-page__text">
+                <li><a href="/biographie.html">Biographie</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/frise.html">Frise</a></li>
+                <li><a href="/home.html">Accueil-2</a></li>
+                <li><a href="/index.html">Accueil-1</a></li>
+                <li><a href="/robie_house.html">Robie House</a></li>
             </ul>
         </div>
         
