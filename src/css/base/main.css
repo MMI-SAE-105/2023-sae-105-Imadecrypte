@@ -1,5 +1,5 @@
 .main{
-    background-color: #F4EFE3;
+    background-color: #F4EFE3
 }
 
 .main__calendrier{
@@ -56,31 +56,29 @@
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
-.main {
-    max-width: 600px; /* Ajustez la largeur maximale selon vos préférences */
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour mettre en évidence le formulaire */
-}
 
-.main h2 {
+.contact h2 {
     text-align: center;
     color: #7F9366; /* Couleur du texte du titre */
 }
-
-.main div {
+.contact {
+    max-width: 6000px; /* Ajustez la largeur maximale selon vos préférences */
+    margin: auto;
+    padding: 20px;
+}
+.contact div {
     margin-bottom: 15px;
 }
 
-.main label {
+.contact label {
     display: block;
     margin-bottom: 5px;
     color: #7F9366; /* Couleur du texte des étiquettes */
 }
 
-.main input,
+.contact input,
 
-.main textarea {
+.contact textarea {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
@@ -88,7 +86,7 @@
     border-radius: 5px; /* Coins arrondis */
 }
 
-.main button {
+.contact button {
     background-color: #7F9366; /* Couleur de fond du bouton */
     color: white; /* Couleur du texte du bouton */
     padding: 10px 15px;
