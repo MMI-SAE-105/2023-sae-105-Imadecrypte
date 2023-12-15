@@ -7,9 +7,10 @@
     text-indent: 30px; 
 }
 
-.main__calendrier__texte{
+.main__texte{
+    display: block;
     margin: 10px 0; 
-    text-indent: 30px; 
+    text-indent: 60px; 
 }
 
 .main__tarifs{
