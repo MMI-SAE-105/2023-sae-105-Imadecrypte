@@ -3,33 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Robie House</title>
+        <title>Hollyhock House</title>
         <link href="src/css/style.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
         <script src="//unpkg.com/alpinejs" defer></script>
-        <style>
-            main {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color:#F4EFE3;
-            }
-
-            .content-container {
-                text-align: center;
-                margin-bottom: 20px; /* Ajoute un espace entre chaque paire d'image et de texte */
-            }
-
-            img {
-                max-width: 200px;
-                height: auto;
-                border-radius: 30px;
-            }
-
-            p {
-                margin-top: 10px; /* Ajoute un espacement entre l'image et le paragraphe */
-            }
-        </style>
     </head>
     <body x-data="{ menuOpen: false }">
         <header class="header">
@@ -62,33 +39,36 @@
                 <li><a href="/robie_house.html">Robie House</a></li>
             </ul>
         </div>
-        <main>
-        <div class="content-container">
-            <h2>Robie House</h2>
+    <main class="main_frise">
+        <div class="content-container_frise">
+            <h2>Hollyhock House</h2>
             <h3>Partie 1 : Les Origines</h3>
             <img
-                src="/public/img/robie_house2.webp"
-                alt="Image Robie House"
+                class="img_frise"
+                src="/public/img/holyhock_house.webp"
+                alt="Image Hollyhock House"
             />
-            <p>La Robie House, également connue sous le nom de Frederick C. Robie House, est une œuvre architecturale emblématique conçue par l'architecte américain Frank Lloyd Wright. Sa conception a débuté en 1908 et la construction a été achevée en 1910. La maison est située dans le quartier historique de Hyde Park à Chicago, Illinois, et elle est considérée comme l'un des chefs-d'œuvre de la carrière de Wright.</p>
+            <p>Hollyhock House, également connue sous le nom de Aline Barnsdall Hollyhock House, est une œuvre majeure conçue par l'architecte américain Frank Lloyd Wright. Située à Los Angeles, en Californie, la conception de la maison a débuté en 1919 et sa construction a été achevée en 1921. Cette résidence exceptionnelle est le résultat de la collaboration entre Wright et Aline Barnsdall, une riche mécène qui souhaitait une maison qui reflète son amour de l'art et de la nature.</p>
         </div>
 
-        <div class="content-container">
-            <h3>Partie 2 : L'architecte Visionnaire</h3>
+        <div class="content-container_frise">
+            <h3>Partie 2 : La Vision d'Aline Barnsdall</h3>
             <img
-                src="/public/img/robie_house0.webp"
-                alt="Image Robie House"
+                class="img_frise"
+                src="/public/img/holyhock_house0.webp"
+                alt="Image Hollyhock House"
             />
-            <p>Frank Lloyd Wright, né en 1867, était un architecte visionnaire qui a profondément influencé l'architecture américaine au XXe siècle. Il est célèbre pour son approche organique et sa volonté de fusionner l'architecture avec la nature. La Robie House incarne parfaitement ses idéaux de l'architecture prairie, un style caractérisé par des lignes horizontales, de larges surplombs, et une intégration harmonieuse avec l'environnement.</p>
+            <p>Aline Barnsdall, une femme d'affaires et mécène des arts, avait une passion pour le théâtre, les arts visuels et la nature. En collaborant avec Frank Lloyd Wright, elle avait pour objectif de créer une maison qui servirait non seulement de résidence privée mais aussi de centre culturel intégrant des espaces pour les arts et le divertissement.</p>
         </div>
 
-        <div class="content-container">
-            <h3>Partie 3 : Les Caractéristiques Architecturales</h3>
+        <div class="content-container_frise">
+            <h3>Partie 3 : L'Architecture Révolutionnaire</h3>
             <img
-                src="/public/img/robie_house1.webp"
-                alt="Image Robie House"
+                class="img_frise"
+                src="/public/img/holyhock_house1.webp"
+                alt="Image Hollyhock House"
             />
-            <p>La Robie House se distingue par ses lignes épurées, son toit en porte-à-faux, ses vastes espaces intérieurs ouverts, et son utilisation novatrice de l'espace. Les grandes fenêtres horizontales permettent une abondance de lumière naturelle, tandis que les matériaux, tels que le béton et la brique, sont utilisés de manière expressive. L'intérieur reflète également la philosophie de Wright, avec des espaces fluides et une intégration continue du design.</p>
+            <p>La Hollyhock House se distingue par son architecture révolutionnaire. Elle est caractérisée par des formes géométriques audacieuses, des lignes horizontales, des terrasses en escalier, et des éléments ornementaux inspirés de la fleur d'hibiscus (holyhock en anglais). Les espaces intérieurs et extérieurs sont soigneusement intégrés pour créer une expérience harmonieuse entre l'homme, l'art et la nature.</p>
         </div>
     </main>
         <footer class="footer">
